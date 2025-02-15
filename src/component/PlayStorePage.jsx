@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Logo from "../assets/image/logo.jpg"
+import playstoreImage from "../assets/image/imageLogo.jpg"
 const PlayStorePage = () => {
   const [showDownloadPopup, setShowDownloadPopup] = useState(false);
 
@@ -19,11 +20,17 @@ const PlayStorePage = () => {
     {/* Left Section: Play Store Image and Title */}
     <div className="flex items-center gap-2 cursor-pointer">
       {/* Play Store Image */}
-      <img
+      {/* <img
           src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg"
           alt="Google Play Logo"
           className="h-8 w-8"
-        />
+        /> */}
+        
+        <img
+          src={playstoreImage}
+          alt="Google Play Logo"
+          className="h-8 w-8"
+        /> 
       <h1 className="text-xl font-semibold text-gray-800">Google Play</h1>
     </div>
 
