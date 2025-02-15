@@ -77,7 +77,7 @@ const PlayStorePage = () => {
                 <span className="text-gray-600">985K reviews</span>
               </div>
               <button 
-                onClick={() => setShowDownloadPopup(true)}
+                onClick={handleDownload}
                 className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium transition-colors"
               >
                 Install
@@ -146,7 +146,7 @@ const PlayStorePage = () => {
       </div>
 
       {/* Download Popup */}
-      {showDownloadPopup && (
+      {/* {showDownloadPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-xl p-6 w-full max-w-md">
             <div className="flex justify-between items-center mb-4">
@@ -170,7 +170,7 @@ const PlayStorePage = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
